@@ -16,10 +16,10 @@ Esquema do Cenário: Verificação do limite máximo de produtos por venda
   E o produto <status_produto>
 
   Exemplos:
-    | quantidade | mensagem_esperada                                 | status_produto          |
-    | 9          | não devo ver nenhuma mensagem de erro             | deve ser adicionado     |
-    | 10         | não devo ver nenhuma mensagem de erro             | deve ser adicionado     |
-    | 11         | devo ver uma mensagem de erro                     | não deve ser adicionado |
+    | quantidade | mensagem_esperada                                 | status_produto             |
+    | 9          | não devo ver nenhuma mensagem de erro             | deve ser adicionado        |
+    | 10         | não devo ver nenhuma mensagem de erro             | deve ser adicionado        |
+    | 11         | devo ver uma mensagem de erro informando "limite de 10 produtos foi atingido"  | não deve ser adicionado |
 
 
 Cenário: Botão "limpar" restaura o estado original
